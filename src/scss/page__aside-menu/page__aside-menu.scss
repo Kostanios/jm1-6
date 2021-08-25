@@ -1,0 +1,157 @@
+.page__aside-menu {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  height: 100%;
+  max-height: 1024px;
+  padding: 0;
+
+  @media (min-width: 1120px) {
+    width: 320px;
+  }
+
+  &.aside-menus {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    transition: 0.5s;
+  }
+}
+
+%asidelink {
+  margin: 0 20px 0 24px;
+  font-size: 16px;
+  line-height: 45px;
+  color: #1B1C21;
+  font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.aside-menus {
+  transition: 0.3s;
+
+  .aside-menus__header {
+    display: flex;
+    height: 100px;
+    margin-top: 24px;
+
+    &:first-child {
+      margin-left: 24px;
+    }
+
+    .btn--type-search {
+      margin-right: 24px;
+      transform: translateX(67.5px);
+      background-image: url(../img/search.svg);
+    }
+
+    .btn--type-close {
+      background-image: url(../img/close.svg);
+
+      @media (min-width: 1120px) {
+        display: none;
+      }
+    }
+
+    .company-logo {
+      width: 97px;
+      height: 51px;
+    }
+  }
+
+  .aside-menus__main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    .aside-menus__item {
+      @extend %asidelink;
+    }
+
+    .is-active {
+      color: #7E7E82;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+
+        width: 4px;
+        height: 40px;
+        background: url(../img/highlight.svg);
+
+        left: -24px;
+      }
+    }
+  }
+
+  .aside-menus__footer {
+    margin-left: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .aside-menus__wrapper {
+    .page__btn {
+      margin-right: 10px;
+    }
+  }
+
+  .aside-menus__text--mail {
+    font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+    width: 106px;
+    height: 24px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1B1C21;
+
+    .aside-menus__link--mail {
+      text-decoration: none;
+      color: #1B1C21;
+    }
+  }
+
+  .aside-menus__text--phone {
+    font-size: 24px;
+    text-decoration: none;
+    color: #1B1C21;
+
+    .aside-menus__link--phone {
+      text-decoration: none;
+      color: #1B1C21;
+    }
+  }
+
+  .aside-menus__btns--lang {
+    margin-left: -6px;
+    font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
+    color: #1B1C21;
+    margin-bottom: 50px;
+    display: flex;
+
+    .aside-lang__radio {
+      margin-right: 10px;
+    }
+
+    .aside-lang__input {
+      appearance: none;
+    }
+
+    .aside-lang__label {
+      cursor: pointer;
+    }
+
+    .aside-lang__input:checked+.aside-lang__label {
+      color: #7E7E82;
+    }
+  }
+}

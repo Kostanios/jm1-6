@@ -1,0 +1,118 @@
+.page__brands {
+  width: 100%;
+  min-height: 160px;
+}
+
+.brands {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 8px;
+  padding-right: 30px;
+
+  @media (min-width: 768px) {
+    display: grid;
+  }
+
+  @media (min-width: 1340px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .swiper__logo {
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+  }
+
+  .logo--type-HP {
+    width: 52px;
+    height: 52px;
+    align-self: center;
+  }
+
+  .logo--type-ViewSonic {
+    width: 128px;
+    height: 21px;
+    align-self: center;
+  }
+
+  .logo--type-Apple {
+    width: 44px;
+    height: 44px;
+    align-self: center;
+  }
+
+  .logo--type-acer {
+    width: 94px;
+    height: 24px;
+    align-self: center;
+  }
+
+  .logo--type-SONY {
+    width: 128px;
+    height: 25px;
+    align-self: center;
+  }
+
+  .swiper-slide__card {
+    width: 240px;
+    height: 72px;
+    background-color: #fff;
+  }
+
+  .card {
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card__logo {
+    margin: 20px 0 20px 16px;
+  }
+
+  .card__btn {
+    width: 40px;
+    height: 40px;
+    background: no-repeat url(../img/go.svg) center center;
+    margin: 16px 16px 16px 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hidden-768 {
+    display: none;
+
+    @media (min-width: 1340px) {
+      display: flex;
+    }
+  }
+
+}
+
+.btn--type-showmore {
+  margin-top: 16px;
+  font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+  position: relative;
+  margin-left: 15px;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    background: url(../img/expand.svg);
+
+    width: 24px;
+    height: 24px;
+
+    left: -20px;
+    bottom: -3px;
+  }
+}

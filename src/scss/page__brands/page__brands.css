@@ -1,0 +1,143 @@
+.page__brands {
+  width: 100%;
+  min-height: 160px;
+}
+
+.brands {
+  display: none;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+  row-gap: 8px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .brands {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (min-width: 1340px) {
+  .brands {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.brands .swiper__logo {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+}
+
+.brands .logo--type-HP {
+  width: 52px;
+  height: 52px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.brands .logo--type-ViewSonic {
+  width: 128px;
+  height: 21px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.brands .logo--type-Apple {
+  width: 44px;
+  height: 44px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.brands .logo--type-acer {
+  width: 94px;
+  height: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.brands .logo--type-SONY {
+  width: 128px;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.brands .swiper-slide__card {
+  width: 240px;
+  height: 72px;
+  background-color: #fff;
+}
+
+.brands .card {
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brands .card__logo {
+  margin: 20px 0 20px 16px;
+}
+
+.brands .card__btn {
+  width: 40px;
+  height: 40px;
+  background: no-repeat url(../img/go.svg) center center;
+  margin: 16px 16px 16px 0;
+}
+
+.brands .hidden {
+  display: none;
+}
+
+.brands .hidden-768 {
+  display: none;
+}
+
+@media (min-width: 1340px) {
+  .brands .hidden-768 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.btn--type-showmore {
+  margin-top: 16px;
+  font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+  position: relative;
+  margin-left: 15px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .btn--type-showmore {
+    display: block;
+  }
+}
+
+.btn--type-showmore::before {
+  content: '';
+  position: absolute;
+  background: url(../img/expand.svg);
+  width: 24px;
+  height: 24px;
+  left: -20px;
+  bottom: -3px;
+}
+/*# sourceMappingURL=page__brands.css.map */

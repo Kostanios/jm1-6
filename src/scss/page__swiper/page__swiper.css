@@ -1,0 +1,80 @@
+.page__swiper {
+  max-width: 100%;
+  height: 120px;
+  max-height: 100%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .page__swiper {
+    display: none;
+  }
+}
+
+.swiper__title {
+  position: relative;
+  min-height: 56px;
+  margin: 26px 0 26px 0;
+  font-size: 16px;
+  line-height: 24px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.39%, #F8F8F8), to(#FFFFFF));
+  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  text-transform: uppercase;
+  font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  padding-top: 2px;
+}
+
+.swiper-container {
+  margin: 0;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  background-color: #B5B6BC;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-container .swiper-slide .swiper__logo {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+}
+
+.swiper-container .swiper-slide .logo--type-HP {
+  width: 52px;
+  height: 52px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.swiper-container .swiper-slide .swiper-slide__card {
+  width: 240px;
+  height: 72px;
+  background-color: #fff;
+}
+
+.swiper-container .swiper-slide .card {
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.swiper-container .swiper-slide .card__logo {
+  margin: 20px 0 20px 16px;
+}
+
+.swiper-container .swiper-slide .card__btn {
+  width: 40px;
+  height: 40px;
+  background: no-repeat url(../img/go.svg) center center;
+  margin: 16px 16px 16px 0;
+}
+/*# sourceMappingURL=page__swiper.css.map */

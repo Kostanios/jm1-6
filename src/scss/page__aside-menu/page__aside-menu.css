@@ -1,0 +1,183 @@
+.page__aside-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 0;
+  height: 100%;
+  max-height: 1024px;
+  padding: 0;
+}
+
+@media (min-width: 1120px) {
+  .page__aside-menu {
+    width: 320px;
+  }
+}
+
+.page__aside-menu.aside-menus {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  z-index: 1;
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.aside-menus .aside-menus__main .aside-menus__item {
+  margin: 0 20px 0 24px;
+  font-size: 16px;
+  line-height: 45px;
+  color: #1B1C21;
+  font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.aside-menus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.aside-menus .aside-menus__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  margin-top: 24px;
+}
+
+.aside-menus .aside-menus__header:first-child {
+  margin-left: 24px;
+}
+
+.aside-menus .aside-menus__header .btn--type-search {
+  margin-right: 24px;
+  -webkit-transform: translateX(67.5px);
+          transform: translateX(67.5px);
+  background-image: url(../img/search.svg);
+}
+
+.aside-menus .aside-menus__header .btn--type-close {
+  background-image: url(../img/close.svg);
+}
+
+@media (min-width: 1120px) {
+  .aside-menus .aside-menus__header .btn--type-close {
+    display: none;
+  }
+}
+
+.aside-menus .aside-menus__header .company-logo {
+  width: 97px;
+  height: 51px;
+}
+
+.aside-menus .aside-menus__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+.aside-menus .aside-menus__main .is-active {
+  color: #7E7E82;
+  position: relative;
+}
+
+.aside-menus .aside-menus__main .is-active::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background: url(../img/highlight.svg);
+  left: -24px;
+}
+
+.aside-menus .aside-menus__footer {
+  margin-left: 24px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.aside-menus .aside-menus__wrapper .page__btn {
+  margin-right: 10px;
+}
+
+.aside-menus .aside-menus__text--mail {
+  font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+  width: 106px;
+  height: 24px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+.aside-menus .aside-menus__text--mail .aside-menus__link--mail {
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+.aside-menus .aside-menus__text--phone {
+  font-size: 24px;
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+.aside-menus .aside-menus__text--phone .aside-menus__link--phone {
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+.aside-menus .aside-menus__btns--lang {
+  margin-left: -6px;
+  font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
+  color: #1B1C21;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aside-menus .aside-menus__btns--lang .aside-lang__radio {
+  margin-right: 10px;
+}
+
+.aside-menus .aside-menus__btns--lang .aside-lang__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.aside-menus .aside-menus__btns--lang .aside-lang__label {
+  cursor: pointer;
+}
+
+.aside-menus .aside-menus__btns--lang .aside-lang__input:checked + .aside-lang__label {
+  color: #7E7E82;
+}
+/*# sourceMappingURL=page__aside-menu.css.map */

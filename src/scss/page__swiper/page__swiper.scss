@@ -1,0 +1,76 @@
+.page__swiper {
+
+  max-width: 100%;
+  height: 120px;
+  max-height: 100%;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.swiper__title {
+  position: relative;
+  min-height: 56px;
+  margin: 26px 0 26px 0;
+  font-size: 16px;
+  line-height: 24px;
+  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  text-transform: uppercase;
+  font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  padding-top: 2px;
+}
+
+.swiper-container {
+  margin: 0;
+
+  .swiper-pagination-bullet {
+    background-color: #B5B6BC;
+    width: 12px;
+    height: 12px;
+  }
+
+  .swiper-slide {
+    .swiper__logo {
+      height: 100px;
+      width: 100px;
+      background-color: #fff;
+    }
+
+    .logo--type-HP {
+      width: 52px;
+      height: 52px;
+      align-self: center;
+    }
+
+    .swiper-slide__card {
+      width: 240px;
+      height: 72px;
+      background-color: #fff;
+    }
+
+    .card {
+      border-radius: 6px;
+      border: 1px solid #EAEAEA;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card__logo {
+      margin: 20px 0 20px 16px;
+
+    }
+
+    .card__btn {
+      width: 40px;
+      height: 40px;
+      background: no-repeat url(../img/go.svg) center center;
+      margin: 16px 16px 16px 0;
+    }
+
+  }
+
+}

@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Conv_TTLakes-Bold', Helvetica, sans-serif;
+
+  margin: 0 auto;
+  min-width: 0;
+  max-width: 1980px;
+  width: 100%;
+  height: 100vh;
+  background-color: #F2F2F2;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1120px) {
+    margin: 0;
+  }
+}
+
+button {
+  /* Обнуление стилей */
+  margin-bottom: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  /* Конец обнуления */
+}
+
+.btn {
+  background-color: #FF3E79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Buttons */
+
+.btn--type-burger {
+  background-image: url(../img/burger.svg);
+  margin-left: 16px;
+}
+
+.btn--type-phone {
+  background-image: url(../img/phone.svg);
+}
+
+.btn--type-chat {
+  background-image: url(../img/chat.svg);
+}
+
+.btn--type-profile {
+  background-image: url(../img/profile.svg);
+}
+
+.btn--type-repair {
+  background-image: url(../img/repair.svg);
+}
+
+.btn--type-checkstatus {
+  background-image: url(../img/checkstatus.svg);
+}
+
+/* Buttons */
+.company-logo {
+  position: relative;
+
+  margin: -5px 10px 13px 10px;
+}

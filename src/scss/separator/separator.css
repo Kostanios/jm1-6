@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  .separator {
+    display: none;
+  }
+}
+
+.separator-768px {
+  position: relative;
+  margin: 0 20px 0 10px;
+  width: 2px;
+  height: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #EAEAEA;
+  border-radius: 1px;
+}
+
+@media (min-width: 768px) {
+  .separator-768px {
+    display: none;
+  }
+}
+/*# sourceMappingURL=separator.css.map */

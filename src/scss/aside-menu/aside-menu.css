@@ -1,0 +1,27 @@
+.page__aside {
+  width: 100%;
+  height: 100%;
+}
+
+.aside-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.aside-menu .icons {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .aside-menu .icons {
+    display: block;
+  }
+}
+/*# sourceMappingURL=aside-menu.css.map */

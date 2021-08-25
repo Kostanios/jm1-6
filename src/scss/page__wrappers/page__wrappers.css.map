@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,eAAe,CAAC;EACd,WAAW,EAAE,0CAA0C;EAEvD,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,CAAC;EACZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EATE,OAAO;EAUzB,WAAW,EAAE,MAAM;EAEnB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "page__wrappers.scss"
+    ],
+    "names": [],
+    "file": "page__wrappers.css"
+}

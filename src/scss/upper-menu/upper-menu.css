@@ -1,0 +1,119 @@
+.page__upper-menu {
+  width: 100%;
+  height: 88px;
+  padding-top: 24px;
+}
+
+.upper-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #ffffff;
+}
+
+@media (min-width: 1120px) {
+  .upper-menu {
+    display: none;
+  }
+}
+
+.upper-menu__nav:not(.separator, .company-logo, .nav-buttons) {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #FF3E79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page__btn {
+  margin: 0 16px 0 0;
+}
+
+@media (min-width: 768px) {
+  .page__btn {
+    margin: 0 16px 0 0;
+  }
+}
+
+/* Buttons */
+.btn--type-burger {
+  background-image: url(../img/burger.svg);
+  margin-left: 16px;
+}
+
+.btn--type-phone {
+  background-image: url(../img/phone.svg);
+}
+
+.btn--type-chat {
+  background-image: url(../img/chat.svg);
+}
+
+.btn--type-profile {
+  background-image: url(../img/profile.svg);
+}
+
+.btn--type-repair {
+  background-image: url(../img/repair.svg);
+}
+
+.btn--type-checkstatus {
+  background-image: url(../img/checkstatus.svg);
+}
+
+/* Buttons */
+.company-logo {
+  position: relative;
+  margin: -5px 10px 0 0;
+}
+
+.separator {
+  position: relative;
+  margin: 0 20px 0 10px;
+  width: 2px;
+  height: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #EAEAEA;
+  border-radius: 1px;
+}
+
+@media (min-width: 768px) {
+  .separator {
+    display: none;
+  }
+}
+
+.separator-768px {
+  display: none;
+  position: relative;
+  width: 2px;
+  height: 32px;
+  background: #EAEAEA;
+  border-radius: 1px;
+}
+
+@media (min-width: 768px) {
+  .separator-768px {
+    display: block;
+    margin: 5px 20px 0 4px;
+  }
+}
+/*# sourceMappingURL=upper-menu.css.map */
