@@ -497,9 +497,10 @@ button {
 .page__main {
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
   background: #F8F8F8;
-  padding: 16px 0 0 16px; }
+  padding: 16px 0 0 16px;
+  -webkit-filter: opacity(1);
+          filter: opacity(1); }
   @media (min-width: 1120px) {
     .page__main {
       margin-left: 320px;
@@ -541,6 +542,10 @@ button {
       margin: 20px 0 0 0; }
     .page__main .main-info__btn {
       margin: 10px 10px 0 10px; } }
+
+.opacity {
+  -webkit-filter: opacity(0.1);
+          filter: opacity(0.1); }
 
 .page__scroll-menu {
   width: 100%;
@@ -668,14 +673,18 @@ button {
   font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
   letter-spacing: -0.2px;
   color: #7E7E82;
-  padding-top: 2px; }
+  padding-top: 20px; }
 
 .swiper-container {
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
   .swiper-container .swiper-pagination-bullet {
     background-color: #B5B6BC;
     width: 12px;
     height: 12px; }
+  .swiper-container .swiper-pagination {
+    position: relative;
+    bottom: 16px; }
   .swiper-container .swiper-slide .swiper__logo {
     height: 100px;
     width: 100px;
@@ -708,8 +717,8 @@ button {
 .brands {
   display: none;
   grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
   row-gap: 8px;
   padding-right: 30px; }
   @media (min-width: 768px) {
@@ -743,7 +752,7 @@ button {
     height: 25px;
     align-self: center; }
   .brands .swiper-slide__card {
-    width: 240px;
+    width: 224px;
     height: 72px;
     background-color: #fff; }
   .brands .card {
@@ -789,7 +798,7 @@ button {
   flex-direction: column;
   width: 0;
   height: 100%;
-  max-height: 1024px;
+  max-height: 100%;
   padding: 0; }
   @media (min-width: 1120px) {
     .page__aside-menu {
@@ -851,10 +860,10 @@ button {
   .aside-menus .aside-menus__footer {
     margin-left: 24px;
     height: 100%;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    margin-top: 290px; }
   .aside-menus .aside-menus__wrapper .page__btn {
     margin-right: 10px; }
   .aside-menus .aside-menus__text--mail {
@@ -890,6 +899,63 @@ button {
       cursor: pointer; }
     .aside-menus .aside-menus__btns--lang .aside-lang__input:checked + .aside-lang__label {
       color: #7E7E82; }
+
+.open {
+  width: 320px; }
+
+.technique-title {
+  margin: 30px 0 24px 0; }
+
+.page__technique {
+  width: 100%;
+  min-height: 350px; }
+
+@media (min-width: 768px) {
+  .technique .swiper-wrapper {
+    display: none; } }
+
+.technique .swiper-wrapper--laptop {
+  display: none;
+  width: 100%;
+  padding-right: 30px; }
+  @media (min-width: 768px) {
+    .technique .swiper-wrapper--laptop {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      -moz-column-gap: 24px;
+           column-gap: 24px;
+      row-gap: 10px; } }
+  @media (min-width: 1340px) {
+    .technique .swiper-wrapper--laptop {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+.technique .technique-pagination {
+  top: 15px; }
+  @media (min-width: 768px) {
+    .technique .technique-pagination {
+      display: none; } }
+
+.technique .technique__hidden {
+  display: none; }
+  @media (min-width: 1340px) {
+    .technique .technique__hidden:nth-child(4) {
+      display: block; } }
+
+.technique .swiper-slide .swiper-slide__item {
+  display: flex;
+  justify-content: space-between;
+  width: 224px;
+  height: 160px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px; }
+  .technique .swiper-slide .swiper-slide__item .swiper-slide__text {
+    font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+    margin: 16px 0 0 16px;
+    color: #1B1C21;
+    font-size: 16px; }
+  .technique .swiper-slide .swiper-slide__item .card__btn {
+    align-self: flex-end; }
 
 
 /*# sourceMappingURL=style.css.map*/
