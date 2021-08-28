@@ -1,7 +1,7 @@
-let btn = document.querySelectorAll('.page__read-more-bttn');
-let hiddenText = document.querySelectorAll('.hidden-text');
+const btn = document.querySelectorAll('.page__read-more-bttn');
+const hiddenText = document.querySelectorAll('.hidden-text');
 
-let readMore = function() {
+const readMore = function() {
   let opened = false;
 
   for (let i = 0; i < btn.length; i++) {

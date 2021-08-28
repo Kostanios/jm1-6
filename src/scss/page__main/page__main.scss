@@ -2,10 +2,10 @@
 
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
   background: #F8F8F8;
 
   padding: 16px 0 0 16px;
+  filter: opacity(1);
 
   @media (min-width: 1120px) {
     margin-left: 320px;
@@ -70,4 +70,8 @@
       margin: 10px 10px 0 10px;
     }
   }
+}
+
+.opacity {
+  filter: opacity(0.1);
 }

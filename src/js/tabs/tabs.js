@@ -1,4 +1,4 @@
-let tab = function () {
+const tab = function () {
   let tabNav = document.querySelectorAll('.tabs-nav__item'),
     tabContent = document.querySelectorAll('.page__tab'),
     tabName;

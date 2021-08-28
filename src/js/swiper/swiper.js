@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper-container', {
 
   slidesPerView: 1.2,
 
-  spaceBetween: 0,
+  spaceBetween: 10,
 
   breakpoints: {
     330: {
@@ -59,21 +59,21 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 function showMoreBrands() {
-  let button = document.querySelector('.btn--type-showmore');
-  let _ = document.querySelectorAll('.hidden');
-  let cards = [];
+  const button = document.querySelectorAll('.btn--type-showmore');
+  const _ = document.querySelectorAll('.hidden');
+  const cards = [];
   let opened = false;
   for (let i = 1; i <= _.length; i++) {
     cards.push(document.getElementById([i]))
   }
 
-  button.addEventListener('click', function() {
+  button[0].addEventListener('click', function() {
     if (!opened) {
       for (let i = 0; i < cards.length; i++) {
         cards[i].classList.remove('hidden', 'hidden-768')
       }
 
-      button.innerHTML = 'Скрыть'
+      button[0].innerHTML = 'Скрыть'
       opened = true;
     } else {
       for (let i = 0; i < cards.length; i++) {
@@ -82,11 +82,11 @@ function showMoreBrands() {
         document.getElementById('2').classList.add('hidden-768')
       }
 
-      button.innerHTML = 'Показать все'
+      button[0].innerHTML = 'Показать все'
       opened = false;
     }
 
-    
+
   })
 }
 

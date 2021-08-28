@@ -1,4 +1,4 @@
-let link = function () {
+const link = function () {
   let linkNav = document.querySelectorAll('.aside-menus__item'),
     linkName;
   linkNav.forEach(item => {
@@ -15,21 +15,24 @@ let link = function () {
 }
 
 function closeAndOpenBurger() {
-  let openBtn = document.querySelector('.btn--type-burger');
-  let closeBtn = document.querySelector('.btn--type-close');
+  const openBtn = document.querySelector('.btn--type-burger');
+  const closeBtn = document.querySelector('.btn--type-close');
+  const asideMenu = document.querySelector('.aside-menus');
+  const page = document.querySelector('.page__main');
 
   openBtn.addEventListener('click', function() {
-    document.getElementById("mySidenav").style.width = "320px";
-    document.getElementById('main').style.filter = 'opacity(0.1)'
+    asideMenu.classList.add('open');
+    page.classList.add('opacity');
   })
 
   closeBtn.addEventListener('click', function() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById('main').style.filter = 'opacity(1)'
+    asideMenu.classList.remove('open')
+    page.classList.remove('opacity');
   })  
 }
 
 let inp = document.getElementsByName('lang');
+
 
 inp.forEach((i) => {
   if (i.checked) {
@@ -42,6 +45,22 @@ inp.forEach((i) => {
   });
 });
 
+const selectLanguage = () => {
+  // Проверка на нового пользователя
+  if (localStorage.getItem('lang') == undefined) {
+    inp[0].checked = true;
+  }
+
+  // Сохранение языка при следующих заходах
+  if (localStorage.getItem('lang') == 'ru') {
+    inp[0].checked = true;
+  } else if (localStorage.getItem('lang') == 'en') {
+    inp[1].checked = true;
+  } else if (localStorage.getItem('lang') == 'ch'){
+    inp[2].checked = true;
+  }
+}
 
 closeAndOpenBurger();
 link();
+selectLanguage();

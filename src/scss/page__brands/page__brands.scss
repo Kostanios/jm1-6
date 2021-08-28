@@ -6,7 +6,7 @@
 .brands {
   display: none;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 12px;
+  column-gap: 24px;
   row-gap: 8px;
   padding-right: 30px;
 
@@ -55,7 +55,7 @@
   }
 
   .swiper-slide__card {
-    width: 240px;
+    width: 224px;
     height: 72px;
     background-color: #fff;
   }
