@@ -19,15 +19,18 @@ function closeAndOpenBurger() {
   const closeBtn = document.querySelector('.btn--type-close');
   const asideMenu = document.querySelector('.aside-menus');
   const page = document.querySelector('.page__main');
+  const footer = document.querySelector('.page__footer');
 
   openBtn.addEventListener('click', function() {
     asideMenu.classList.add('open');
-    page.classList.add('opacity');
+    page.classList.add('blur');
+    footer.classList.add('blur');
   })
 
   closeBtn.addEventListener('click', function() {
     asideMenu.classList.remove('open')
-    page.classList.remove('opacity');
+    page.classList.remove('blur');
+    footer.classList.remove('blur');
   })  
 }
 

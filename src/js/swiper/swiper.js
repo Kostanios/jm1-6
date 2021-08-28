@@ -7,52 +7,60 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 
-  slidesPerView: 1.2,
+  slidesPerView: 1.15,
 
-  spaceBetween: 10,
+  spaceBetween: 15,
 
   breakpoints: {
     330: {
-      slidesPerView: 1.25,
+      slidesPerView: 1.20,
     },
 
     340: {
-      slidesPerView: 1.3,
+      slidesPerView: 1.25,
     },
 
     350: {
-      slidesPerView: 1.35,
+      slidesPerView: 1.30,
     },
 
     360: {
-      slidesPerView: 1.4,
-    },
-
-    370: {
       slidesPerView: 1.35,
     },
 
+    370: {
+      slidesPerView: 1.30,
+    },
+
     380: {
-      slidesPerView: 1.4,
+      slidesPerView: 1.35,
     },
 
     390: {
-      slidesPerView: 1.4,
+      slidesPerView: 1.35,
     },
 
     400: {
-      slidesPerView: 1.45,
+      slidesPerView: 1.40,
     },
 
     410: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.45,
     },
 
     420: {
-      slidesPerView: 1.55,
+      slidesPerView: 1.50,
     },
 
     500: {
+      slidesPerView: 1.8,
+    },
+
+    510: {
+      slidesPerView: 1.9,
+    },
+
+    520: {
       slidesPerView: 2,
     },
   }
