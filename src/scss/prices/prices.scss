@@ -5,8 +5,33 @@
 .prices-btn {
   width: 107px;
   height: 32px;
-  border-radius: 16px;
+}
+
+.btn--broad {
+  font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 24px;
   background-color: #FF3E79;
+  border-radius: 16px;
+
+  display: flex;
+  position: relative;
+  padding: 0 0 0 12px;
+  align-items: center;
+  width: 119px;
+  justify-self: flex-end;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 3px;
+    top: 11px;
+    background: no-repeat url(../img/arrow-r.svg);
+  }
 }
 
 .page__prices {
@@ -121,34 +146,8 @@
       color: #1B1C21;
       margin-top: 23px;
     }
-
-    .prices-laptop__btn {
-      font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      font-size: 12px;
-      line-height: 24px;
-
-      display: flex;
-      position: relative;
-      padding: 0 0 0 12px;
-      align-items: center;
-      width: 119px;
-      justify-self: flex-end;
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        right: 3px;
-        top: 11px;
-        background: no-repeat url(../img/arrow-r.svg);
-      }
-    }
   }
 }
-
 
 .wrapper-footer {
   max-width: 100%;

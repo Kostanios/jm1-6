@@ -1,0 +1,150 @@
+.modal {
+  max-width: 0px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  overflow: hidden;
+
+  .btn--type-close {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .modal__form {
+    max-height: 620px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .input {
+    max-width: 376px;
+    height: 48px;
+    margin: 0 0 16px 0;
+    padding-left: 16px;
+    outline: none;
+
+    &:nth-child(4) {
+      height: 118px;
+      padding-bottom: 70px;
+    }
+  }
+
+  input::placeholder {
+    font-size: 16px;
+    color: #B5B6BC;
+    font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
+  }
+
+  input:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+
+  .modal__description {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
+    color: #7E7E82;
+  }
+
+  .description__link {
+    color: #ff004c;
+    text-decoration: none;
+  }
+
+  .modal__input {
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    font-size: 16px;
+  }
+
+  .modal__btn--submit {
+    width: 136px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.btn--type-close {
+  background-image: url(../img/close.svg);
+  margin: 0 0 40px 0;
+
+  @media (min-width: 1240px) {
+    position: absolute;
+    z-index: 200;
+    top: 16px;
+    transform: translateX(-95px);
+  }
+}
+
+.modal__title {
+  position: relative;
+  display: block;
+  margin: 0 0 16px 0;
+
+  height: 40px;
+
+  font-size: 24px;
+  line-height: 40px;
+  color: $color-font;
+
+  @media (min-width: 1240px) {
+    margin: 40px 0 16px 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    width: 4px;
+    height: 40px;
+    background: url(../img/highlight.svg);
+
+    left: -16px;
+
+    @media (min-width: 1240px) {
+      left: -32px;
+    }
+  }
+}
+
+
+
+.page__modal--call {
+  min-width: 320px;
+  height: 100%;
+  overflow: visible;
+
+  @media (min-width: 1240px) {
+    padding: 0 32px;
+    max-width: 440px;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.modal-open {
+  min-width: 320px;
+  overflow: visible;
+  transition: 0.5s;
+
+  @media (min-width: 1240px) {
+    padding: 0 32px;
+    max-width: 440px;
+  }
+}
+
+.modal-hidden {
+  opacity: 0;
+  transition: 0.5s;
+}

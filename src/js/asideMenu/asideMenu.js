@@ -1,3 +1,5 @@
+import { addBlur } from "../addBlur/addBlur";
+
 const link = function () {
   let linkNav = document.querySelectorAll('.aside-menus__item'),
     linkName;
@@ -23,14 +25,17 @@ function closeAndOpenBurger() {
 
   openBtn.addEventListener('click', function() {
     asideMenu.classList.add('open');
-    page.classList.add('blur');
-    footer.classList.add('blur');
+    addBlur(false);
+  })
+
+  page.addEventListener('click', function() {
+    asideMenu.classList.remove('open');
+    addBlur(true);
   })
 
   closeBtn.addEventListener('click', function() {
     asideMenu.classList.remove('open')
-    page.classList.remove('blur');
-    footer.classList.remove('blur');
+    addBlur(true);
   })  
 }
 

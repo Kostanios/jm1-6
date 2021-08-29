@@ -519,35 +519,35 @@
             <p class="prices-laptop__subtitle">Диагностика</p>
             <p class="prices-laptop__subtitle">Бесплатно</p>
             <p class="prices-laptop__subtitle time">30 мин</p>
-            <button type="button" class="prices-laptop__btn prices-btn">Заказать</button>
+            <button type="button" class="btn--broad prices-btn">Заказать</button>
           </div>
 
           <div class="prices-laptop__wrapper wrapper-items">
             <p class="prices-laptop__subtitle">Замена дисплея</p>
             <p class="prices-laptop__subtitle">1 000 ₽</p>
             <p class="prices-laptop__subtitle time">30-120 мин</p>
-            <button type="button" class="prices-laptop__btn prices-btn">Заказать</button>
+            <button type="button" class="btn--broad prices-btn">Заказать</button>
           </div>
 
           <div class="prices-laptop__wrapper wrapper-items">
             <p class="prices-laptop__subtitle">Замена полифонического динамика</p>
             <p class="prices-laptop__subtitle">1 000 ₽</p>
             <p class="prices-laptop__subtitle time">30-120 мин</p>
-            <button type="button" class="prices-laptop__btn prices-btn">Заказать</button>
+            <button type="button" class="btn--broad prices-btn">Заказать</button>
           </div>
 
           <div class="prices-laptop__wrapper wrapper-items">
             <p class="prices-laptop__subtitle">Тестирование с выдачей технического заключения</p>
             <p class="prices-laptop__subtitle">1 000 ₽</p>
             <p class="prices-laptop__subtitle time">30-120 мин</p>
-            <button type="button" class="prices-laptop__btn prices-btn">Заказать</button>
+            <button type="button" class="btn--broad prices-btn">Заказать</button>
           </div>
 
           <div class="prices-laptop__wrapper wrapper-items">
             <p class="prices-laptop__subtitle">Замена программного обеспечения</p>
             <p class="prices-laptop__subtitle price">1 000 ₽</p>
             <p class="prices-laptop__subtitle time">30-120 мин</p>
-            <button type="button" class="prices-laptop__btn prices-btn">Заказать</button>
+            <button type="button" class="btn--broad prices-btn">Заказать</button>
           </div>
 
         </div>
@@ -629,9 +629,32 @@
             </nav>
         </div>
     </aside>
-    <aside class="page__modal--feedback"></aside>
+    <aside class="page__modal--feedback modal modal-hidden">
+      <button type="button" class="modal__btn btn btn--type-close"></button>
+      <p class="modal__title">Обратная связь</p>
+      <form action="#" class="modal__form" method="POST">
+        <input type="text" class="modal__input input" placeholder="Имя" required>
+        <input type="tel" class="modal__input input" placeholder="Телефон" required />
+        <input type="email" class="modal__input input" placeholder="Электронная почта" required>
+        <input type="text" class="modal__input input" placeholder="Сообщение" required>
+        <p class="modal__description description">
+          Нажимая “отправить”, вы даете согласие на <a class="description__link" href="#">обработку персональных данных</a> и соглашаетесь с <a class = 'description__link'>нашей политикой конфиденциальности</a>
+        </p>
+        <button type="submit" class="modal__btn--submit btn--broad">Отправить</button>
+      </form>
+    </aside>
 
-    <aside class="page__modal--call"></aside>
+    <aside class="page__modal--call modal modal-hidden">
+      <button type="button" class="modal__btn btn btn--type-close"></button>
+      <p class="modal__title">Заказать звонок</p>
+      <form action="#" class="modal__form" method="POST">
+        <input type="tel" class="modal__input input" placeholder="Телефон" required />
+        <p class="modal__description description">
+          Нажимая “отправить”, вы даете согласие на <a class="description__link" href="#">обработку персональных данных</a> и соглашаетесь с <a class = 'description__link'>нашей политикой конфиденциальности</a>
+        </p>
+        <button type="submit" class="modal__btn--submit btn--broad">Отправить</button>
+      </form>
+    </aside>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>

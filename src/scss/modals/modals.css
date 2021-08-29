@@ -1,0 +1,16 @@
+.modal {
+  min-width: 320px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.modal .btn--type-close {
+  background-image: url(../img/close.svg);
+  margin: 24px 0 0 16px;
+}
+/*# sourceMappingURL=modals.css.map */

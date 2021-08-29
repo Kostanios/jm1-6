@@ -1659,4 +1659,13 @@ button {
   font-size: 14px;
   font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
 }
+
+.page__modal {
+  width: 440px;
+  height: 940px;
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
 /*# sourceMappingURL=style.css.map */
