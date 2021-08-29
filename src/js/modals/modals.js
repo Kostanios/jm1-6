@@ -54,9 +54,9 @@ const openAndCloseModal = () => {
   
       closeBtnFeedback.addEventListener('click', function() {
         feeedbackModal.classList.add('modal-hidden');
+        feeedbackModal.classList.add('hidden');
         feeedbackModal.classList.remove('modal-open');
         addBlur(true);
-        callModal.classList.remove('none');
       })
     }
   }
@@ -84,9 +84,9 @@ const openAndCloseModal = () => {
   
       closeBtnCall.addEventListener('click', function() {
         callModal.classList.add('modal-hidden');
+        callModal.classList.add('none');
         callModal.classList.remove('modal-open');
         addBlur(true);
-        feeedbackModal.classList.remove('none');
       })
     }
   }
