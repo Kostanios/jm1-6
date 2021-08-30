@@ -8,5 +8,6 @@ export function addBlur(blured) {
   } else {
     page.classList.add('blur');
     footer.classList.add('blur');
+    page.disabled = true;
   }
 }

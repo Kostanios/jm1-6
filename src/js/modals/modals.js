@@ -13,11 +13,17 @@ const openAndCloseModal = () => {
   const openBtnCall = document.querySelectorAll('.btn--type-phone')[1];
   const closeBtnCall = document.querySelectorAll('.btn--type-close')[2];
 
+  const screenWidth = window.screen.width;
+
   openBtnFeedback.addEventListener('click', function() {
     callModal.classList.add('modal-hidden');
     callModal.classList.remove('modal-open');
-    addBlur(true);
     feeedbackModal.classList.remove('none');
+    document.body.style.overflow = 'hidden';
+    
+    if (screenWidth >= 1120) {
+      addBlur(false);
+    }
 
     openFeedbackModal();
   })
@@ -25,8 +31,12 @@ const openAndCloseModal = () => {
   openBtnCall.addEventListener('click', function() {
     feeedbackModal.classList.add('modal-hidden');
     feeedbackModal.classList.remove('modal-open');
-    addBlur(true);
     callModal.classList.remove('none');
+    document.body.style.overflow = 'hidden';
+
+    if (screenWidth >= 1120) {
+      addBlur(false);
+    }
 
     openCallModal();
   })
@@ -39,7 +49,7 @@ const openAndCloseModal = () => {
   
       callModal.classList.add('none');
   
-      addBlur(false);
+      
     }
   
     if (feedbackOpened) {
@@ -48,15 +58,20 @@ const openAndCloseModal = () => {
       page.addEventListener('click', function() {
         feeedbackModal.classList.remove('modal-open');
         feeedbackModal.classList.add('modal-hidden');
+        document.body.style.overflow = '';
         addBlur(true);
-        callModal.classList.remove('none');
       })
   
       closeBtnFeedback.addEventListener('click', function() {
         feeedbackModal.classList.add('modal-hidden');
-        feeedbackModal.classList.add('hidden');
+        feeedbackModal.classList.add('none');
         feeedbackModal.classList.remove('modal-open');
-        addBlur(true);
+        document.body.style.overflow = '';
+
+        if (screenWidth >= 1120) {
+          addBlur(true);
+        }
+        
       })
     }
   }
@@ -69,7 +84,7 @@ const openAndCloseModal = () => {
   
       feeedbackModal.classList.add('none');
   
-      addBlur(false);
+      
     }
   
     if (callOpened) {
@@ -79,18 +94,23 @@ const openAndCloseModal = () => {
         callModal.classList.remove('modal-open');
         callModal.classList.add('modal-hidden');
         addBlur(true);
-        feeedbackModal.classList.remove('none');
+        document.body.style.overflow = '';
       })
   
       closeBtnCall.addEventListener('click', function() {
         callModal.classList.add('modal-hidden');
         callModal.classList.add('none');
         callModal.classList.remove('modal-open');
-        addBlur(true);
+        document.body.style.overflow = '';
+
+        if (screenWidth >= 1120) {
+          addBlur(true);
+        }
+        
       })
     }
   }
 
 }
 
-openAndCloseModal();  
+openAndCloseModal();
