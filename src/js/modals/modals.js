@@ -15,6 +15,8 @@ const openAndCloseModal = () => {
 
   const screenWidth = window.screen.width;
 
+  // Открываем окно "Обратная связть" при нажатии на кнопку и закрываем окно "Заказать звонок"
+
   openBtnFeedback.addEventListener('click', function() {
     callModal.classList.add('modal-hidden');
     callModal.classList.remove('modal-open');
@@ -25,8 +27,10 @@ const openAndCloseModal = () => {
       addBlur(false);
     }
 
-    openFeedbackModal();
+    openAndCloseFeedbackModal();
   })
+
+  // Открываем окно и закр "Заказать звонок" при нажатии на кнопку и закрываем окно "Обратная связь"
 
   openBtnCall.addEventListener('click', function() {
     feeedbackModal.classList.add('modal-hidden');
@@ -38,10 +42,10 @@ const openAndCloseModal = () => {
       addBlur(false);
     }
 
-    openCallModal();
+    openAndCloseCallModal();
   })
 
-  const openFeedbackModal = function() {
+  const openAndCloseFeedbackModal = function() {
     if (!feedbackOpened) {
       feedbackOpened = true;
       feeedbackModal.classList.add('modal-open');
@@ -70,13 +74,12 @@ const openAndCloseModal = () => {
 
         if (screenWidth >= 1120) {
           addBlur(true);
-        }
-        
+        }     
       })
     }
   }
 
-  const openCallModal = function() {
+  const openAndCloseCallModal = function() {
     if (!callOpened) {
       callOpened = true;
       callModal.classList.add('modal-open');
@@ -105,8 +108,7 @@ const openAndCloseModal = () => {
 
         if (screenWidth >= 1120) {
           addBlur(true);
-        }
-        
+        }  
       })
     }
   }
