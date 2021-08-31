@@ -829,7 +829,6 @@ button {
   transition: 0.3s; }
   .aside-menus .aside-menus__header {
     display: flex;
-    height: 100px;
     margin-top: 24px; }
     .aside-menus .aside-menus__header:first-child {
       margin-left: 24px; }
@@ -862,10 +861,13 @@ button {
   .aside-menus .aside-menus__footer {
     display: flex;
     margin-left: 24px;
-    margin-top: 300px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end; }
+    @media (min-height: 950px) {
+      .aside-menus .aside-menus__footer {
+        height: 0;
+        margin-top: 400px; } }
   .aside-menus .aside-menus__wrapper .page__btn {
     margin-right: 10px; }
   .aside-menus .aside-menus__text--mail {
