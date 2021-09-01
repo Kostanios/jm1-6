@@ -51,6 +51,7 @@
   .prices-mob__card {
     width: 260px;
     height: 200px;
+    position: relative;
     background-color: #fff;
     border-radius: 6px;
     padding-top: 6px;
@@ -73,8 +74,8 @@
       font-family: 'Conv_TTLakes-Medium', Helvetica, sans-serif;
       text-transform: uppercase;
       display: flex;
-      position: relative;
-      bottom: 32px;
+      position: absolute;
+      bottom: 15px;
       left: 120px;
       padding: 0 0 0 12px;
       color: #FFFFFF;
