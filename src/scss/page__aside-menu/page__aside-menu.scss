@@ -19,7 +19,6 @@
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     ;
     transition: 0.5s;
-
   }
 }
 
@@ -105,6 +104,8 @@
   }
 
   .aside-menus__wrapper {
+    min-width: 320px;
+
     .page__btn {
       margin-right: 10px;
     }
@@ -136,6 +137,7 @@
   }
 
   .aside-menus__btns--lang {
+    min-width: 320px;
     margin-left: -6px;
     font-family: 'Conv_TTLakes-Light', Helvetica, sans-serif;
     color: #1B1C21;
